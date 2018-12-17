@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+<title>Coundown 2019</title>
+</head>
+<body>
+<div class="center">
+  <h1><span>2019</span><br>
+    Hú hú hú!<br>
+Sắp tới sinh nhật rồi! Ahihihi!<br>
+<a href="https://fb.com/nhanbu1198" style="text-decoration: none; color:#fff">Quà đeeeeee!!!</a> </h1>
+  <div id="clock"></div>
+</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="Countdown.js"></script>
+<script type="text/javascript">
+  $('#clock').countdown('2019/1/1',function(event){
+      var $this = $(this).html(event.strftime(' '
+      + '<div><span>%w</span><br><span>Weeks</span></div>'
+      + '<div><span>%d</span><br><span>Days</span></div>'
+      + '<div><span>%H</span><br><span>Hr</span></div>'
+      + '<div><span>%M</span><br><span>Min</span></div>'
+      + '<div><span>%S</span><br><span>Sec</span></div>'
+      ))
+    })
+  </script>
+</html>
